@@ -24,7 +24,7 @@ jobs:
       - name: Install fieldtrial package and run smoke check
         run: |
           R CMD INSTALL .
-          Rscript -e "library(fieldtrial); df <- load_sample_trial('rice_split_plot'); mp <- detect_trial_columns(df); mp$main_plot <- 'irrigation'; mp$sub_plot <- 'cultivar'; res <- analyse_field_trial(df, 'split_plot', mp); print(res$anova_table); stopifnot(nrow(res$split_metrics) == 4)"
+          Rscript tests/test-package.R
 
       - name: Build and check R package cleanly
         env:
