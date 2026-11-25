@@ -1,0 +1,19 @@
+# R / Shinylive artifacts
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+*.Rcheck/
+*.tar.gz
+_site/
+site/
+app/rsconnect/
+app/.Rhistory
+app/.RData
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+*.tmp
+*.log
+__pycache__/

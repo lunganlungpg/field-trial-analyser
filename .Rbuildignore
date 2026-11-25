@@ -1,0 +1,11 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+^\.github$
+^app$
+^plots$
+^scripts$
+^_site$
+^site$
+^README\.md$
+^CONTRIBUTING\.md$
+^Dockerfile$

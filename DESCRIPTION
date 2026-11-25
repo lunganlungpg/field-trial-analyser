@@ -1,0 +1,26 @@
+Package: fieldtrial
+Title: Serverless Field Trial Analyser: Experimental Design, ANOVA, Post-Hoc & Diagnostic Suite
+Version: 1.0.0
+Authors@R: c(
+    person("Lunganlung", "P. G.", role = c("aut", "cre"),
+           email = "lunganlung@icar.gov.in"))
+Description: Pure base-R statistical engine and Shinylive (webR) companion application
+    for agricultural and biological field trial analysis. Supports CRD, RCBD (with
+    relative efficiency), Latin Square, Two-Way Factorial RCBD, and Split-Plot designs
+    with dual Error(a)/Error(b) partitioning, Piepho compact letter display (CLD),
+    data transformations (Log, Sqrt, Arcsine), assumption diagnostics, outlier flags,
+    spatial residual mapping, replicate power planning, and reproducible R script export.
+License: MIT + file LICENSE
+URL: https://github.com/lunganlungpg/field-trial-analyser
+BugReports: https://github.com/lunganlungpg/field-trial-analyser/issues
+Encoding: UTF-8
+Depends: R (>= 4.0.0)
+Imports:
+    stats,
+    utils,
+    graphics,
+    grDevices
+Suggests:
+    shiny,
+    bslib
+
