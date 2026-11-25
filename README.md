@@ -5,7 +5,7 @@
 [![Live Shinylive App](https://img.shields.io/badge/Live%20Web%20App-Shinylive%20(webR)-15803D?style=for-the-badge&logo=r)](https://lunganlungpg.github.io/field-trial-analyser/)
 [![Deploy Shinylive](https://github.com/lunganlungpg/field-trial-analyser/actions/workflows/deploy-shinylive.yml/badge.svg)](https://github.com/lunganlungpg/field-trial-analyser/actions/workflows/deploy-shinylive.yml)
 [![CI Check](https://github.com/lunganlungpg/field-trial-analyser/actions/workflows/ci.yml/badge.svg)](https://github.com/lunganlungpg/field-trial-analyser/actions/workflows/ci.yml)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE.md)
 [![Zero Server Cost](https://img.shields.io/badge/Hosting-%240%2Fmo%20GitHub%20Pages-0284C7.svg)](#architecture--why-serverless-webr)
 
 Designed for **applied agricultural researchers, agritech field teams, and university teaching**, this project runs a complete statistical R runtime **100% client-side inside your web browser via WebAssembly (`webR`)**. There is no Shiny Server to pay for, no R/RStudio installation required for students or agronomists, and **unpublished trial spreadsheets never leave the user's device**.
@@ -146,4 +146,4 @@ Rscript tests/run_tests.R
 ## 👤 Author & License
 
 **Lunganlung P. G.** — Division of Agricultural Statistics, ICAR–Indian Agricultural Statistics Research Institute (IASRI), New Delhi.  
-Released under the [MIT License](LICENSE).
+Released under the [MIT License](LICENSE.md).

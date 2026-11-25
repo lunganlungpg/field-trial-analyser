@@ -23,7 +23,7 @@
 \alias{svg_bar_chart}
 \alias{svg_field_heatmap}
 \docType{package}
-\title{Serverless Field Trial Analyser: Experimental Design, ANOVA, Post-Hoc & Diagnostic Suite}
+\title{Field Trial Experimental Design, ANOVA, and Diagnostic Suite}
 \description{
 Pure base-R statistical engine and Shinylive (webR) companion application for
 agricultural and biological field trial analysis, supporting CRD, RCBD, Latin

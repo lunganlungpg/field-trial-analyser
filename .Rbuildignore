@@ -9,3 +9,5 @@
 ^README\.md$
 ^CONTRIBUTING\.md$
 ^Dockerfile$
+^LICENSE\.md$
+^tests/run_tests\.R$

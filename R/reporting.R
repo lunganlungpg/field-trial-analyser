@@ -65,7 +65,7 @@ generate_reproducible_r_code <- function(res, source_label = "my_field_trial.csv
   if (is.null(df) || nrow(df) == 0L) return("<p><em>No rows.</em></p>")
   esc <- function(x) {
     x <- as.character(x)
-    x[is.na(x)] <- "—"
+    x[is.na(x)] <- "\u2014"
     x <- gsub("&", "&amp;", x, fixed = TRUE)
     x <- gsub("<", "&lt;", x, fixed = TRUE)
     gsub(">", "&gt;", x, fixed = TRUE)
@@ -110,7 +110,7 @@ generate_html_report <- function(res) {
 
   paste0(
     '<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">',
-    '<title>Field Trial Analysis Report — ', esc(res$mapping$response), '</title>',
+    '<title>Field Trial Analysis Report &mdash; ', esc(res$mapping$response), '</title>',
     '<style>',
     'body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;max-width:980px;margin:28px auto;padding:0 20px;color:#0f172a;line-height:1.55;background:#f8fafc;}',
     '.card{background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:20px 24px;margin-bottom:20px;box-shadow:0 1px 3px rgba(0,0,0,0.04);}',

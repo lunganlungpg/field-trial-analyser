@@ -443,8 +443,8 @@ analyse_field_trial <- function(df,
                       levels = unique(as.character(sub[[mapping$factor_a]])))
     sub$.fb <- factor(as.character(sub[[mapping$factor_b]]),
                       levels = unique(as.character(sub[[mapping$factor_b]])))
-    sub$.cell <- factor(paste(sub$.fa, sub$.fb, sep = " × "),
-                        levels = unique(paste(sub$.fa, sub$.fb, sep = " × ")))
+    sub$.cell <- factor(paste(sub$.fa, sub$.fb, sep = " \u00d7 "),
+                        levels = unique(paste(sub$.fa, sub$.fb, sep = " \u00d7 ")))
 
     fit <- stats::lm(.y ~ .blk + .fa * .fb, data = sub)
     atab <- stats::anova(fit)
@@ -489,8 +489,8 @@ analyse_field_trial <- function(df,
                       levels = unique(as.character(sub[[mapping$main_plot]])))
     sub$.sp <- factor(as.character(sub[[mapping$sub_plot]]),
                       levels = unique(as.character(sub[[mapping$sub_plot]])))
-    sub$.cell <- factor(paste(sub$.mp, sub$.sp, sep = " × "),
-                        levels = unique(paste(sub$.mp, sub$.sp, sep = " × ")))
+    sub$.cell <- factor(paste(sub$.mp, sub$.sp, sep = " \u00d7 "),
+                        levels = unique(paste(sub$.mp, sub$.sp, sep = " \u00d7 ")))
 
     fit_full <- stats::lm(.y ~ .blk + .mp + .blk:.mp + .sp + .mp:.sp, data = sub)
     atab <- stats::anova(fit_full)

@@ -1,5 +1,5 @@
 Package: fieldtrial
-Title: Serverless Field Trial Analyser: Experimental Design, ANOVA, Post-Hoc & Diagnostic Suite
+Title: Field Trial Experimental Design, ANOVA, and Diagnostic Suite
 Version: 1.0.0
 Authors@R: c(
     person("Lunganlung", "P. G.", role = c("aut", "cre"),

@@ -200,7 +200,7 @@ plot_diagnostics_grid <- function(res, dark = FALSE) {
 plot_interaction_means <- function(res, dark = FALSE) {
   pal <- .theme_palette(dark)
   if (!(res$design %in% c("factorial_rcbd", "split_plot"))) {
-    plot.new()
+    graphics::plot.new()
     graphics::text(0.5, 0.5, "Interaction plot applies to Factorial RCBD and Split-Plot designs.", cex = 1.1)
     return(invisible(NULL))
   }
